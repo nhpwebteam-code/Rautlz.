@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowLeft,
   ArrowRight,
@@ -33,13 +34,50 @@ export async function generateMetadata({
 
   if (!project) {
     return {
-      title: "Case Study Not Found",
+      title: "Case Study Not Found | Raultz",
     };
   }
 
+  const title = `${project.title} Case Study | ${project.category} in Hyderabad | Raultz`;
+  const description = `${project.heroSummary.slice(0, 150)}... Custom ${project.category.toLowerCase()} built by Raultz in Hyderabad, India.`;
+  const canonicalUrl = `https://raultz.vercel.app/portfolio/${slug}`;
+
   return {
-    title: `${project.title} (Sample Case Study)`,
-    description: project.heroSummary,
+    title: {
+      absolute: title,
+    },
+    description,
+    keywords: [
+      `${project.title.toLowerCase()} case study`,
+      `${project.category.toLowerCase()} hyderabad`,
+      "web development case study india",
+      ...project.techStack.map((t) => `${t.toLowerCase()} agency`),
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "Raultz",
+      locale: "en_IN",
+      type: "article",
+      images: [
+        {
+          url: project.posterImage,
+          width: 1200,
+          height: 630,
+          alt: `${project.title} - ${project.category} case study by Raultz`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [project.posterImage],
+    },
   };
 }
 
@@ -139,11 +177,13 @@ export default async function CaseStudyPage({
 
       {/* 3. Hero Visual Poster */}
       <section className="relative w-full aspect-[16/9] sm:aspect-[21/9] rounded-3xl overflow-hidden shadow-lg border border-border">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${project.posterImage})`,
-          }}
+        <Image
+          src={project.posterImage}
+          alt={`${project.title} - ${project.category} case study visual representation by Raultz`}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         
@@ -278,13 +318,18 @@ export default async function CaseStudyPage({
         </div>
 
         <div className="flex flex-wrap items-center gap-4 shrink-0">
+          <Link href="/pricing">
+            <Button size="lg" variant="ghost">
+              View Pricing
+            </Button>
+          </Link>
           <Link href="/contact">
-            <Button size="lg" variant="terracotta" iconRight={<ArrowRight className="w-4 h-4" />}>
+            <Button size="lg" variant="secondary" iconRight={<ArrowRight className="w-4 h-4" />}>
               Book a Call
             </Button>
           </Link>
           <Link href="/start-a-project">
-            <Button size="lg" variant="secondary" iconRight={<Sparkles className="w-4 h-4" />}>
+            <Button size="lg" variant="terracotta" iconRight={<Sparkles className="w-4 h-4" />}>
               Start a Project
             </Button>
           </Link>

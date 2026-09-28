@@ -140,7 +140,7 @@ export function ServicesFAQSection() {
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="/images/faq-neural-bg.jpg"
-            alt="3D Neural Fluid Background"
+            alt="Raultz FAQ and Engineering Consultation 3D Neural Fluid Architecture Background"
             fill
             priority
             className="object-cover object-center opacity-85 scale-105 transition-transform duration-1000"

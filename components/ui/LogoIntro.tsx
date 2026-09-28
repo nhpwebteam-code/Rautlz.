@@ -119,7 +119,7 @@ export default function LogoIntro({ onAnimationComplete, className = "" }: LogoI
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/brand/raultz-logo-tight-light.png"
-                    alt="Raultz RZ Logo"
+                    alt="Raultz Digital Engineering and Design Studio Logo"
                     width={180}
                     height={170}
                     className="w-full h-auto object-contain pointer-events-none"

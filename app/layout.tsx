@@ -39,19 +39,114 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Raultz | Website & App Development Company in Hyderabad, India",
+    title: "Raultz | Websites & Apps Built to Convert",
     description:
-      "Raultz designs and builds custom websites, web apps and mobile apps for startups and businesses in Hyderabad and across India. Fast, SEO-ready, built to convert.",
-    url: "https://raultz.vercel.app",
+      "Custom websites, web apps and mobile apps for startups and businesses in Hyderabad and India.",
+    url: "https://raultz.vercel.app/",
     siteName: "Raultz",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://raultz.vercel.app/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raultz | Websites & Apps Built to Convert",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raultz | Website & App Development",
+    description:
+      "Custom websites, web apps and mobile apps for startups and businesses in Hyderabad and India.",
+    images: ["https://raultz.vercel.app/og-cover.jpg"],
   },
   icons: {
-    icon: "/brand/favicon.svg",
-    shortcut: "/brand/favicon.svg",
-    apple: "/brand/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Raultz",
+  url: "https://raultz.vercel.app",
+  logo: "https://raultz.vercel.app/brand/raultz-logo-dark.png",
+  image: "https://raultz.vercel.app/og-cover.jpg",
+  telephone: "+91-9014567787",
+  email: "contact@raultz.com",
+  description:
+    "Raultz designs and builds custom websites, web apps and mobile apps for startups and businesses in Hyderabad and across India. Fast, SEO-ready, built to convert.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Hyderabad",
+    addressRegion: "Telangana",
+    postalCode: "500032",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 17.385,
+    longitude: 78.4867,
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Hyderabad",
+    },
+    {
+      "@type": "Country",
+      name: "India",
+    },
+  ],
+  serviceType: [
+    "Website Development",
+    "Web App Development",
+    "Mobile App Development",
+    "UI/UX Design",
+    "Custom Software Architecture",
+    "3D & Interactive Web Experiences",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digital Engineering Sprint Packages",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Development",
+          url: "https://raultz.vercel.app/website-development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Mobile & Web App Development",
+          url: "https://raultz.vercel.app/app-development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "UI/UX Design",
+          url: "https://raultz.vercel.app/ui-ux-design",
+        },
+      },
+    ],
+  },
+  priceRange: "₹₹-₹₹₹₹",
+  sameAs: [
+    "https://linkedin.com/company/raultz",
+    "https://x.com/raultz",
+  ],
 };
 
 export default function RootLayout({
@@ -63,6 +158,10 @@ export default function RootLayout({
     <html lang="en" className={`h-full antialiased ${archivoBlack.variable}`}>
       <head>
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

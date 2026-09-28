@@ -77,7 +77,7 @@ export function BrandMark({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={imageSrc}
-        alt="Raultz Logo"
+        alt="Raultz - Website and Mobile App Development Studio in Hyderabad, India"
         width={renderWidth}
         height={renderHeight}
         loading="eager"

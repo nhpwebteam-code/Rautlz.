@@ -18,7 +18,31 @@ export const metadata: Metadata = {
     "mobile app development india",
   ],
   alternates: {
-    canonical: "/",
+    canonical: "https://raultz.vercel.app/",
+  },
+  openGraph: {
+    title: "Raultz | Websites & Apps Built to Convert",
+    description:
+      "Custom websites, web apps and mobile apps for startups and businesses in Hyderabad and India.",
+    url: "https://raultz.vercel.app/",
+    siteName: "Raultz",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://raultz.vercel.app/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raultz | Websites & Apps Built to Convert",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raultz | Website & App Development",
+    description:
+      "Custom websites, web apps and mobile apps for startups and businesses in Hyderabad and India.",
+    images: ["https://raultz.vercel.app/og-cover.jpg"],
   },
 };
 

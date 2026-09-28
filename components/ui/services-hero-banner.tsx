@@ -10,7 +10,7 @@ export function ServicesHeroBanner() {
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <Image
           src="/images/faq-neural-bg.jpg"
-          alt="3D Neural Fluid Background"
+          alt="Raultz Digital Engineering and Custom Software Services Architecture Banner"
           fill
           priority
           sizes="(max-width: 1280px) 100vw, 1280px"

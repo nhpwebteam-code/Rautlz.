@@ -80,18 +80,23 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5 font-sans text-xs text-[#9E9E9E]">
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
-                  Architecture Blueprint
+                <Link href="/website-development" className="hover:text-white transition-colors">
+                  Website Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/app-development" className="hover:text-white transition-colors">
+                  App Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/ui-ux-design" className="hover:text-white transition-colors">
+                  UI/UX Design
                 </Link>
               </li>
               <li>
                 <Link href="/portfolio" className="hover:text-white transition-colors">
                   Case Studies &amp; Press
-                </Link>
-              </li>
-              <li>
-                <Link href="/style-guide" className="hover:text-white transition-colors">
-                  Design System Tokens
                 </Link>
               </li>
               <li>

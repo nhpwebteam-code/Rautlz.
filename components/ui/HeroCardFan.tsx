@@ -8,12 +8,12 @@ export const HERO_PHOTOS = [
   {
     id: "hp-1",
     image: "/hero-photos/IMG-20260902-WA0031.jpg",
-    alt: "Hero Artwork 1",
+    alt: "Modern luxury e-commerce web application mockup by Raultz Hyderabad",
   },
   {
     id: "hp-2",
     image: "/hero-photos/IMG-20260902-WA0033.jpg",
-    alt: "Hero Artwork 2",
+    alt: "Fintech analytics dashboard user interface design engineered by Raultz",
     tag: {
       text: "@coplin",
       bgColor: "#2563EB",
@@ -23,22 +23,22 @@ export const HERO_PHOTOS = [
   {
     id: "hp-3",
     image: "/hero-photos/IMG-20260902-WA0034.jpg",
-    alt: "Hero Artwork 3",
+    alt: "High-conversion digital flagship product landing page design",
   },
   {
     id: "hp-4",
     image: "/hero-photos/IMG-20260903-WA0014.jpg",
-    alt: "Hero Artwork 4",
+    alt: "iOS and Android mobile app interface prototype built with React Native",
   },
   {
     id: "hp-5",
     image: "/hero-photos/IMG-20260903-WA0016.jpg",
-    alt: "Hero Artwork 5",
+    alt: "SaaS workflow management application design by Raultz digital studio",
   },
   {
     id: "hp-6",
     image: "/hero-photos/IMG-20260903-WA0018.jpg",
-    alt: "Hero Artwork 6",
+    alt: "Interactive spatial design system and component architecture",
     tag: {
       text: "@andrea",
       bgColor: "#16A34A",
@@ -48,22 +48,22 @@ export const HERO_PHOTOS = [
   {
     id: "hp-7",
     image: "/hero-photos/IMG-20260902-WA0028.jpg",
-    alt: "Hero Artwork 7",
+    alt: "Corporate website redesign with dynamic typography and fast load times",
   },
   {
     id: "hp-8",
     image: "/hero-photos/IMG-20260903-WA0013.jpg",
-    alt: "Hero Artwork 8",
+    alt: "Clean minimal UI/UX design wireframe for healthcare tech platform",
   },
   {
     id: "hp-9",
     image: "/hero-photos/IMG-20260903-WA0015.jpg",
-    alt: "Hero Artwork 9",
+    alt: "Real estate marketplace mobile web application layout",
   },
   {
     id: "hp-10",
     image: "/hero-photos/IMG-20260903-WA0017.jpg",
-    alt: "Hero Artwork 10",
+    alt: "B2B enterprise portal with high performance Core Web Vitals score",
   },
 ];
 
