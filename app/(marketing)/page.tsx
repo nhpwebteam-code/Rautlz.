@@ -5,8 +5,21 @@ import ClosingCTASection from "@/components/sections/ClosingCTASection";
 import LogoIntro from "@/components/ui/LogoIntro";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Raultz is a creative digital agency engineering high-impact web platforms, 3D interactive experiences, and bespoke digital architectures.",
+  title: {
+    absolute: "Raultz | Website & App Development Company in Hyderabad, India",
+  },
+  description:
+    "Raultz designs and builds custom websites, web apps and mobile apps for startups and businesses in Hyderabad and across India. Fast, SEO-ready, built to convert.",
+  keywords: [
+    "website development company hyderabad",
+    "web design agency india",
+    "app development company hyderabad",
+    "custom website development",
+    "mobile app development india",
+  ],
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {
