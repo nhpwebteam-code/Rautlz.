@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { PORTFOLIO_PROJECTS } from "@/lib/content/portfolio";
+import { PROJECTS } from "@/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://raultz.vercel.app";
@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route.priority,
   }));
 
-  const portfolioRoutes = PORTFOLIO_PROJECTS.map((project) => ({
+  const portfolioRoutes = PROJECTS.map((project) => ({
     url: `${baseUrl}/portfolio/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,

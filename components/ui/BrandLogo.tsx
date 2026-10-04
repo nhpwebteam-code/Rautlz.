@@ -49,13 +49,8 @@ export function BrandMark({
   const renderHeight = height || preset.height;
   const renderWidth = width || Math.round(renderHeight * 1.395);
 
-  // Use the exact uncompressed source image
-  // For dark backgrounds: original crisp white R + vibrant red Z
-  // For light backgrounds: high-contrast dark carbon R + vibrant red Z
-  const isDark = theme === "dark";
-  const imageSrc = isDark
-    ? "/brand/raultz-logo-tight-dark.png"
-    : "/brand/raultz-logo-tight-light.png";
+  // High-contrast black R + vibrant red Z brand mark
+  const imageSrc = "/brand/raultz-logo-tight-light.png";
 
   return (
     <div
