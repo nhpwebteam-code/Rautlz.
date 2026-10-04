@@ -62,13 +62,32 @@ export const metadata: Metadata = {
       "Custom websites, web apps and mobile apps for startups and businesses in Hyderabad and India.",
     images: ["https://raultz.vercel.app/og-cover.jpg"],
   },
+  applicationName: "Raultz",
+  appleWebApp: {
+    title: "Raultz",
+    capable: true,
+    statusBarStyle: "default",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
       { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
+};
+
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Raultz",
+  alternateName: ["Raultz Studio", "Raultz Technologies", "Raultz Hyderabad"],
+  url: "https://raultz.vercel.app/",
 };
 
 const jsonLd = {
@@ -76,7 +95,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "Raultz",
   url: "https://raultz.vercel.app",
-  logo: "https://raultz.vercel.app/brand/raultz-logo-dark.png",
+  logo: "https://raultz.vercel.app/brand/raultz-logo-tight-light.png",
   image: "https://raultz.vercel.app/og-cover.jpg",
   telephone: "+91-9014567787",
   email: "contact@raultz.com",
@@ -158,6 +177,10 @@ export default function RootLayout({
     <html lang="en" className={`h-full antialiased ${archivoBlack.variable}`}>
       <head>
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

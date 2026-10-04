@@ -48,7 +48,7 @@ const teamJsonLd = {
   "@type": "Organization",
   name: "Raultz",
   url: "https://raultz.vercel.app",
-  logo: "https://raultz.vercel.app/brand/raultz-logo-dark.png",
+  logo: "https://raultz.vercel.app/brand/raultz-logo-tight-light.png",
   founder: [
     {
       "@type": "Person",
