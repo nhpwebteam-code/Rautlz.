@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import ContactClient from "./contact-client";
+import { constructMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Contact Raultz | Web & App Development Studio in Hyderabad",
-  },
+export const metadata: Metadata = constructMetadata({
+  title: "Contact Raultz | Web & App Studio Hyderabad",
   description:
-    "Get in touch with Raultz in Hyderabad. Speak directly with our founding architects to discuss your custom website, mobile app, or digital platform requirements.",
+    "Get in touch with Raultz in Hyderabad. Speak directly with our founding architects to discuss your custom website or web app. Contact our team today.",
+  path: "/contact",
   keywords: [
     "contact raultz",
     "hire web developers hyderabad",
@@ -14,35 +15,13 @@ export const metadata: Metadata = {
     "app developers contact india",
     "book digital consultation",
   ],
-  alternates: {
-    canonical: "https://raultz.vercel.app/contact",
-  },
-  openGraph: {
-    title: "Contact Raultz | Web & App Development Studio in Hyderabad",
-    description:
-      "Get in touch with Raultz in Hyderabad. Speak directly with our founding architects to discuss your custom website, mobile app, or digital platform requirements.",
-    url: "https://raultz.vercel.app/contact",
-    siteName: "Raultz",
-    locale: "en_IN",
-    type: "website",
-    images: [
-      {
-        url: "https://raultz.vercel.app/og-cover.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Contact Raultz Studio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Raultz | Web & App Studio Hyderabad",
-    description:
-      "Get in touch with Raultz in Hyderabad. Speak directly with our founding architects to discuss your custom website, mobile app, or digital platform requirements.",
-    images: ["https://raultz.vercel.app/og-cover.jpg"],
-  },
-};
+});
 
 export default function ContactPage() {
-  return <ContactClient />;
+  return (
+    <>
+      <Breadcrumbs items={[{ label: "Contact" }]} className="pt-6" />
+      <ContactClient />
+    </>
+  );
 }

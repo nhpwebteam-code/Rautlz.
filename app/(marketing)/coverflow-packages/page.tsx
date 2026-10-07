@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import CoverflowPackagesCarousel from "@/components/sections/CoverflowPackagesCarousel";
 
 export const metadata: Metadata = {
-  title: "Coverflow Packages Carousel Showcase",
+  title: "Coverflow Packages Carousel Showcase | Raultz",
   description: "Coverflow Auto-Scroll Packages Carousel UI Rebuild",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function CoverflowPackagesPage() {

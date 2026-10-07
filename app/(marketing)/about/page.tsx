@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import AboutClient from "./about-client";
+import { constructMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "About Raultz | Engineering Digital Flagships & High-Conversion Experiences",
-  },
+export const metadata: Metadata = constructMetadata({
+  title: "About Raultz | Digital Engineering Studio Hyderabad",
   description:
-    "Learn about Raultz, an elite digital engineering and spatial design studio in Hyderabad founded by engineers and designers obsessed with craft and performance.",
+    "Raultz is a digital engineering studio in Hyderabad uniting fine craft with heavy Next.js code. Meet our founding triad and book a discovery call today.",
+  path: "/about",
   keywords: [
     "about raultz",
     "web development studio hyderabad",
@@ -14,35 +15,13 @@ export const metadata: Metadata = {
     "custom software architects india",
     "creative engineering studio",
   ],
-  alternates: {
-    canonical: "https://raultz.vercel.app/about",
-  },
-  openGraph: {
-    title: "About Raultz | Engineering Digital Flagships & High-Conversion Experiences",
-    description:
-      "Learn about Raultz, an elite digital engineering and spatial design studio in Hyderabad founded by engineers and designers obsessed with craft and performance.",
-    url: "https://raultz.vercel.app/about",
-    siteName: "Raultz",
-    locale: "en_IN",
-    type: "website",
-    images: [
-      {
-        url: "https://raultz.vercel.app/og-cover.jpg",
-        width: 1200,
-        height: 630,
-        alt: "About Raultz Studio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Raultz | Engineering Digital Flagships",
-    description:
-      "Learn about Raultz, an elite digital engineering and spatial design studio in Hyderabad founded by engineers and designers obsessed with craft and performance.",
-    images: ["https://raultz.vercel.app/og-cover.jpg"],
-  },
-};
+});
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return (
+    <>
+      <Breadcrumbs items={[{ label: "About" }]} className="pt-6" />
+      <AboutClient />
+    </>
+  );
 }

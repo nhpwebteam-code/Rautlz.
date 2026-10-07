@@ -13,8 +13,12 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { ArrowRight, Sparkles, Check, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Design Tokens & Primitives Guide",
+  title: "Design Tokens & Primitives Guide | Raultz",
   description: "Living style guide and verification for Raultz design tokens and UI primitives.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const COLOR_TOKENS = [

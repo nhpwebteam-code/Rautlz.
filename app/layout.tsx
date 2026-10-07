@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Archivo_Black } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { StickyMobileCTA } from "@/components/ui/StickyMobileCTA";
 import "./globals.css";
 
 const archivoBlack = Archivo_Black({
@@ -14,6 +15,7 @@ const archivoBlack = Archivo_Black({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#0b0b0f",
 };
 
 export const metadata: Metadata = {
@@ -67,18 +69,6 @@ export const metadata: Metadata = {
     title: "Raultz",
     capable: true,
     statusBarStyle: "default",
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-    ],
   },
 };
 
@@ -176,6 +166,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`h-full antialiased ${archivoBlack.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico?v=2" sizes="48x48" />
+        <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+        <link rel="icon" href="/icon-192.png?v=2" type="image/png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#0b0b0f" />
         <meta name="robots" content="index, follow" />
         <script
           type="application/ld+json"
@@ -200,6 +196,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <StickyMobileCTA />
       </body>
     </html>
   );

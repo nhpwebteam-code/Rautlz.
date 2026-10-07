@@ -306,6 +306,8 @@ export default function HeroCardFan() {
                   <img
                     src={photo.image}
                     alt={photo.alt}
+                    width={295}
+                    height={360}
                     className="w-full h-full object-cover pointer-events-none select-none"
                     loading="eager"
                   />
