@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.raultz.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://raultz.vercel.app"
 ).replace(/\/+$/, "");
 
 export interface MetadataProps {

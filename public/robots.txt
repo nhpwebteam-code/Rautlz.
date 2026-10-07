@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /login
 Disallow: /thank-you
-Sitemap: https://www.raultz.com/sitemap.xml
+Sitemap: https://raultz.vercel.app/sitemap.xml

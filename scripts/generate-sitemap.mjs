@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.raultz.com').replace(/\/+$/, '');
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || 'https://raultz.vercel.app').replace(/\/+$/, '');
 
 const ROUTES = [
   { path: '', lastmod: '2026-10-07', priority: '1.0' },
