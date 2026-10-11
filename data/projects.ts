@@ -68,6 +68,8 @@ export interface Project {
   category: Exclude<ProjectCategory, "All">;
   package: string;
   description: string;
+  /** 150-200 word unique editorial narrative for SEO indexing */
+  narrative: string;
   cover: string;
   heroImage: string;
   scope: ProjectScope;
@@ -104,6 +106,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 01 - STARTER",
     description:
       "A tactile single-page digital salon for bespoke suiting, fabric curation, and instant WhatsApp measurement routing.",
+    narrative:
+      "Sartorial Atelier is a bespoke suiting studio based in Hyderabad that commissioned Raultz to design and build a high-performance fashion website from scratch in a 3-day sprint. The brief was uncompromising — the digital presence had to mirror the tactile craftsmanship of hand-canvassed half-linings, bone buttons, and Loro Piana cashmere in a way that no generic Shopify theme could achieve. Raultz architected an editorial single-page experience anchored on warm cream tones, precise serif-influenced display headings, and a fabric swatch viewer that lets patrons explore seasonal cloth offerings before scheduling their fitting appointment. The most critical conversion mechanism was a WhatsApp deep-link that pre-populates the client's silhouette tier, cloth shortlist, and preferred timeline — eliminating the back-and-forth that caused DM booking chaos. Within 45 days of launch, monthly fitting consultation bookings rose by 240% and bounce rate dropped by 44 percentage points. This case study demonstrates how a Hyderabad fashion boutique can compete with international ateliers purely through superior digital engineering.",
     cover: "/portfolio/sartorial-atelier/cover.jpg",
     heroImage: "/portfolio/sartorial-atelier/hero.jpg",
     scope: {
@@ -245,6 +249,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 02 - GROWTH",
     description:
       "A sensory culinary destination featuring weekly rotating menus, live table reservations, and cellar pairing stories.",
+    narrative:
+      "Lumière & Oak Bistro is an artisanal European dining destination in Hyderabad that approached Raultz to replace a dependency on third-party reservation portals charging an 18% per-diner commission. The restaurant needed a website that captured the warmth of their timber-ceilinged dining room, open-flame kitchen, and sommelier-curated cellar — while routing all table reservations directly to their in-house team without intermediary fees. Raultz engineered a multi-page dining showcase using Next.js App Router with an interactive seasonal menu component supporting live Brunch, Dinner, and Sommelier Reserve tabs, allergen indicators, and wine pairing callouts. The direct reservation module collects party size, dietary requirements, and celebratory notes before routing instantly to restaurant staff via WhatsApp and email — no third-party calendar software required. Within 60 days of launch, 65% of total monthly bookings migrated to the proprietary platform, recovering over ₹65,000 monthly in portal commissions. This food and beverage website case study shows how Hyderabad restaurants can own their guest relationship end-to-end.",
     cover: "/portfolio/lumiere-bistro/cover.jpg",
     heroImage: "/portfolio/lumiere-bistro/hero.jpg",
     scope: {
@@ -386,6 +392,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 03 - BESPOKE",
     description:
       "A cinematic spatial architecture and interior design portfolio featuring split-screen project walkthroughs and material boards.",
+    narrative:
+      "Atelier Forma Studio is a Hyderabad-based high-end residential and commercial interior design firm that retained Raultz to build a digital portfolio worthy of their landmark projects. The challenge was significant — standard portfolio carousels compressed the monumental scale, natural light, and tactile material richness of spaces featuring Roman travertine, fluted oak millwork, and acoustic plaster walls. Raultz designed an expansive editorial monograph experience using asymmetric image pacing, custom scroll-triggered reveals, and a dedicated Materiality Board section that annotates each natural finish with vendor provenance and specification sheets. A bespoke Architectural Commission Questionnaire captures property location, net square footage, and target investment tier — instantly qualifying prospective clients spending above ₹1.5 Crore on residential commissions. The result was transformative: two flagship luxury residential projects totaling over ₹4.8 Crores in retainer value were secured within ninety days of the new website going live. For interior design firms in Hyderabad and Telangana competing for premium commissions, a bespoke digital monograph is no longer optional.",
     cover: "/portfolio/atelier-forma/cover.jpg",
     heroImage: "/portfolio/atelier-forma/hero.jpg",
     scope: {
@@ -527,6 +535,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 01 - STARTER",
     description:
       "A darkroom-inspired visual archive for commercial, editorial, and fashion photography with instant shoot booking.",
+    narrative:
+      "Solaris Visuals is a commercial and editorial photography studio in Hyderabad serving international fashion houses, architecture firms, and consumer brand creative directors. The studio commissioned Raultz to build a photography portfolio website that could display lossless high-resolution imagery at blistering speed — a near-impossible balance with traditional web builders that either compromise on image quality or page load time. Raultz implemented a custom Next.js image optimization pipeline using multi-density WebP and AVIF formats, achieving a 0.32-second mobile load time with zero layout shift. The portfolio is organized into four commercial verticals — Editorial Fashion, Architectural, Brand Still-Life, and Portraiture — with live production calendar availability so agency producers can check shoot slots without a single email. A transparent Shoot Estimator outlines half-day and full-day creative packages upfront, converting previously time-consuming rate conversations into instant self-service decisions. Solaris Visuals contracted 14 brand campaigns in their first quarter post-launch, tripling their tier-one agency client roster. This photography website case study proves that technical performance and visual excellence are not a tradeoff.",
     cover: "/portfolio/solaris-studio/cover.jpg",
     heroImage: "/portfolio/solaris-studio/hero.jpg",
     scope: {
@@ -668,6 +678,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 03 - BESPOKE",
     description:
       "An architectural real estate showcase for ultra-luxury residential towers, private villas, and estate masterplans.",
+    narrative:
+      "Elysian Living develops ultra-prime residential enclaves and private hill estates marketed to high-net-worth individuals and global investors across India. They commissioned Raultz to replace commoditized listing-portal pages with a dedicated architectural digital sales gallery that communicates the exclusivity of their properties — infinity-pool villas, forest-edge penthouses, and private estate masterplans. Raultz designed a serene cinematic presentation anchored in warm limestone color tokens and stately display typography, providing the same visual gravitas as a printed estate brochure but with interactive floor plan selectors, balcony vista galleries, and specification sheets accessible in a single tap. The private viewing concierge integrates WhatsApp with pre-addressed investor briefing packets, allowing sales partners to dispatch property dossiers instantly rather than manually compiling PDF attachments. Phase-one villa inventory sold 2.4x faster than internal projections, and over 1,450 verified high-net-worth buyer leads were generated within the first ninety days of launch. This real estate website case study is a benchmark for luxury property developers across Hyderabad, Telangana, and Andhra Pradesh.",
     cover: "/portfolio/elysian-estates/cover.jpg",
     heroImage: "/portfolio/elysian-estates/hero.jpg",
     scope: {
@@ -809,6 +821,8 @@ export const PROJECTS: Project[] = [
     package: "PKG 02 - GROWTH",
     description:
       "A modern digital flagship for elevated contemporary menswear, essential capsule wardrobes, and direct order workflows.",
+    narrative:
+      "Kaviar Menswear is a Hyderabad-based direct-to-consumer clothing brand crafting minimalist, high-durability capsule wardrobe staples for urban professionals. Their previous e-commerce storefront suffered from slow plugin-heavy architecture causing mobile layout jumps, confusing size charts, and a checkout flow that drove cart abandonment above industry benchmarks. Raultz rebuilt their digital flagship entirely on Next.js App Router, eliminating all third-party checkout scripts and replacing them with a streamlined proprietary order flow featuring a predictive sizing matrix, one-tap Add-to-Bag mechanics, and an express WhatsApp concierge ordering channel for bulk or custom wardrobe commissions. The Capsule Wardrobe Builder — Kaviar's signature conversion feature — allows customers to visualize and purchase complete coordinated outfits in a single interaction, reducing the average number of sessions needed before purchase. Post-launch metrics showed a 4.8% storewide conversion rate — well above the industry e-commerce average of 2.5% — with 78% of all revenue originating from mobile smartphone buyers. Cart abandonment dropped 38% compared to the previous platform. This D2C fashion e-commerce case study showcases how a Hyderabad menswear brand can convert mobile-first shoppers at scale.",
     cover: "/portfolio/kaviar-menswear/cover.jpg",
     heroImage: "/portfolio/kaviar-menswear/hero.jpg",
     scope: {

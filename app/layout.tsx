@@ -70,6 +70,11 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
   },
+  icons: {
+    icon: "/favicon.ico?v=2",
+    shortcut: "/favicon.ico?v=2",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const jsonLdWebSite = {
@@ -104,16 +109,14 @@ const jsonLd = {
     longitude: 78.4867,
   },
   areaServed: [
-    {
-      "@type": "City",
-      name: "Hyderabad",
-    },
-    {
-      "@type": "Country",
-      name: "India",
-    },
+    { "@type": "City", name: "Hyderabad" },
+    { "@type": "City", name: "Warangal" },
+    { "@type": "State", name: "Telangana" },
+    { "@type": "State", name: "Andhra Pradesh" },
+    { "@type": "Country", name: "India" },
   ],
   serviceType: [
+    "Website Design",
     "Website Development",
     "Web App Development",
     "Mobile App Development",

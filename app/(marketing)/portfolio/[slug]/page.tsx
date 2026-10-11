@@ -157,6 +157,18 @@ export default async function CaseStudyPage({
       </section>
 
       {/* ========================================================================= */}
+      {/* 00. EDITORIAL NARRATIVE — UNIQUE PER-PROJECT SEO TEXT */}
+      {/* ========================================================================= */}
+      <section className="space-y-4 border-l-4 border-[#FF4D2E] pl-6 py-1 max-w-4xl">
+        <span className="font-mono text-[10px] font-bold text-[#FF4D2E] uppercase tracking-widest block">
+          [ 00 // CASE STUDY EDITORIAL ]
+        </span>
+        <p className="font-sans text-base sm:text-lg text-[#1F1B16] leading-relaxed">
+          {project.narrative}
+        </p>
+      </section>
+
+      {/* ========================================================================= */}
       {/* a) HERO IMAGE: LAPTOP MOCKUP */}
       {/* ========================================================================= */}
       <section className="space-y-6">

@@ -1,0 +1,32 @@
+# Raultz
+Website and app design studio based in Hyderabad, India.
+
+## About
+Raultz is a custom website and app design studio headquartered in Hyderabad, Telangana, India.
+We design and build high-performance websites, web applications, and mobile apps for businesses
+across Hyderabad, Warangal, Telangana, and Andhra Pradesh, as well as clients nationwide.
+
+## Services
+- Website Design & Development
+- Web App Development (Next.js, React)
+- Mobile App Development
+- UI/UX Design
+- E-Commerce Development
+- Technical SEO Architecture
+
+## Service Area
+Hyderabad, Warangal, Telangana, Andhra Pradesh, India (remote-friendly nationwide)
+
+## Contact
+Website: https://raultz.vercel.app
+Email: contact@raultz.com
+Phone: +91-9014567787
+WhatsApp: +91-7013629081
+
+## Portfolio
+- https://raultz.vercel.app/portfolio/sartorial-atelier (Fashion – Bespoke Tailoring Studio)
+- https://raultz.vercel.app/portfolio/lumiere-bistro (Food – Restaurant & Reservations)
+- https://raultz.vercel.app/portfolio/atelier-forma (Interior – Architecture Studio)
+- https://raultz.vercel.app/portfolio/solaris-studio (Photography – Commercial Studio)
+- https://raultz.vercel.app/portfolio/elysian-estates (Real Estate – Ultra-Luxury Estates)
+- https://raultz.vercel.app/portfolio/kaviar-menswear (Fashion – D2C Menswear Brand)
